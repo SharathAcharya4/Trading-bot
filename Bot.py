@@ -171,6 +171,12 @@ def telegram():
 
 
 # 🚀 START SERVER
+import os
+
+@app.route('/')
+def home():
+    return "Bot is running"
+    
 if __name__ == "__main__":
     send_controls()
     port = int(os.environ.get("PORT", 5000))
